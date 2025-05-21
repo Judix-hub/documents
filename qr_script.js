@@ -11,7 +11,7 @@ new QRCode(document.getElementById("qrContainer"), {
     width: 122,
     height: 122,
     colorDark: "#000000",
-    colorLight: "rgba(0,0,0,0)",
+    colorLight: "#ffffff",
     correctLevel: QRCode.CorrectLevel.H
 });
 </script>
