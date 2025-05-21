@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Redirección según idioma</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+      const langPrefix = lang.split('-')[0];
+
+      const urls = {
+        es: "https://vibia.com/es/int/colecciones",
+        en: "https://vibia.com/en/int/collections",
+        it: "https://vibia.com/it/int/collezioni",
+        fr: "https://vibia.com/fr/int/collections"
+      };
+
+      const defaultUrl = "https://vibia.com/es/int/colecciones";
+
+      const redirectUrl = urls[langPrefix] || defaultUrl;
+
+      // Redirigir inmediatamente
+      window.location.replace(redirectUrl);
+    });
+  </script>
+</head>
+<body>
+  <p>Redirigiendo según idioma...</p>
+</body>
+</html>
