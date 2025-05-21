@@ -2,7 +2,12 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Redirección según idioma</title>
+  <title>Redirección lang</title>
+  <style>
+    body {
+      background-color: #000000;
+    }
+  </style>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
@@ -24,7 +29,4 @@
     });
   </script>
 </head>
-<body>
-  <p>Redirigiendo según idioma...</p>
-</body>
 </html>
